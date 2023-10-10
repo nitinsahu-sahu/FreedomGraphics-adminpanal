@@ -1,0 +1,173 @@
+/* single Order page */
+.card-stepper {
+  z-index: 0
+}
+
+#progressbar-2 {
+  color: #455A64;
+}
+
+#progressbar-2 li {
+  list-style-type: none;
+  font-size: 13px;
+  width: 33.33%;
+  float: left;
+  position: relative;
+}
+
+#progressbar-2 #step1:before {
+  content: '\f058';
+  font-family: "Font Awesome 5 Free";
+  color: #fff;
+  width: 37px;
+  margin-left: 0px;
+  padding-left: 0px;
+}
+
+#progressbar-2 #step2:before {
+  content: '\f058';
+  font-family: "Font Awesome 5 Free";
+  color: #fff;
+  width: 37px;
+}
+
+#progressbar-2 #step3:before {
+  content: '\f058';
+  font-family: "Font Awesome 5 Free";
+  color: #fff;
+  width: 37px;
+  margin-right: 0;
+  text-align: center;
+}
+
+#progressbar-2 #step4:before {
+  content: '\f111';
+  font-family: "Font Awesome 5 Free";
+  color: #fff;
+  width: 37px;
+  margin-right: 0;
+  text-align: center;
+}
+
+#progressbar-2 li:before {
+  line-height: 37px;
+  display: block;
+  font-size: 12px;
+  background: #c5cae9;
+  border-radius: 50%;
+}
+
+#progressbar-2 li:after {
+  content: '';
+  width: 100%;
+  height: 10px;
+  background: #c5cae9;
+  position: absolute;
+  left: 0%;
+  right: 0%;
+  top: 15px;
+  z-index: -1;
+}
+
+#progressbar-2 li:nth-child(1):after {
+  left: 1%;
+  width: 100%
+}
+
+#progressbar-2 li:nth-child(2):after {
+  left: 1%;
+  width: 100%;
+}
+
+#progressbar-2 li:nth-child(3):after {
+  left: 1%;
+  width: 100%;
+  background: #c5cae9 !important;
+}
+
+#progressbar-2 li:nth-child(4) {
+  left: 0;
+  width: 37px;
+}
+
+#progressbar-2 li:nth-child(4):after {
+  left: 0;
+  width: 0;
+}
+
+#progressbar-2 li.active:before,
+#progressbar-2 li.active:after {
+  background: #6520ff;
+}
+/* ---------------- */
+
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+body {
+  background-color: #fbfbfb;
+}
+
+@media (min-width: 991.98px) {
+  main {
+    padding-left: 240px;
+  }
+}
+
+/* Sidebar */
+.sidebar {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  padding: 58px 0 0;
+  /* Height of navbar */
+  box-shadow: 0 2px 5px 0 rgb(0 0 0 / 5%), 0 2px 10px 0 rgb(0 0 0 / 5%);
+  width: 240px;
+  z-index: 600;
+}
+
+
+@media (max-width: 991.98px) {
+  .sidebar {
+    width: 100%;
+  }
+}
